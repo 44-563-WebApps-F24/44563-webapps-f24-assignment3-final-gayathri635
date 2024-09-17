@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Apps</title>
+</head>
+
+<body>
+    <h1>Gayathri Netapalli</h1>
+    <h2>Pittsburgh</h2>
+    <p>I like this city because it's the only city I have visited for now and I went to hiking with my <b>friend</b>
+        along with that I liked the environment.Pittsburgh is a city in western
+        Pennsylvania at the <b>junction of 3 rivers</b>. </p>
+    <hr>
+    <h2>Ordered list</h2>
+    <ol>
+        <li>Allegheny River</li>
+        <li>Monongahela River</li>
+        <li>Ohio River</li>
+    </ol>
+    <h2>Unordered list</h2>
+    <ul>
+        <li>Fallingwater</li>
+        <li>Ohiopyle State Park</li>
+        <li>Laurel Highlands
+            <ul>
+                <li>It's known for its scenic landscapes</li>
+                <li>Resorts like Seven Springs</li>
+                <li>Hiking opportunities along the Laurel Ridge Trail</li>
+            </ul>
+        </li>
+    </ul>
+    <a href="myDish.html">MyDish</a>
+    <hr>
+    <h2>4 Restaurants</h2>
+    <p>Here's a list of restaurants and food vendors offering exciting Indian cuisine, as well as other great options.
+        These places are known for their flavorful dishes, and some have unique twists on traditional recipes.
+        Each of these places offers a distinctive taste of South Asian cuisine, with several having their own rendition
+        of Chicken 65,
+        perfect for those craving something spicy and flavorful.</p>
+    <table border="1px" width="80%">
+        <tr>
+            <th> Name of the Restaurant </th>
+            <th> Reason </th>
+            <th> Location </th>
+        </tr>
+        <tr>
+            <td> All India Restaurant </td>
+            <td> It has specialty dish of Tandoori Chicken, Curry </td>
+            <td> North Oakland </td>
+        </tr>
+        <tr>
+            <td> Bombay Grill </td>
+            <td> It has specialty dish of Chicken 65, Butter Chicken </td>
+            <td> Robinson Township </td>
+        </tr>
+        <tr>
+            <td> Udipi Café </td>
+            <td> It has specialty dish of Masala Dosa, Medu Vada </td>
+            <td> Monroeville </td>
+        </tr>
+        <tr>
+            <td> Bismillah Restaurant </td>
+            <td> It has specialty dish of Chicken 65, Biryani </td>
+            <td> Oakland </td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Code display</h2>
+    <p>Converts the given array elements into list tags and appends them to the list of the given id.</p>
+    <pre>
+        const arrayToHTMLList = (arr, listID) =>
+            document.querySelector(`#${listID}`).innerHTML += arr
+                .map(item => `
+            ${item}
+        `)
+                .join('');
+    </pre>
+    <a href ="https://code.pieces.app/collections/javascript">snippet</a>
+</body>
+</html>
